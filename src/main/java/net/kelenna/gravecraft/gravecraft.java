@@ -1,6 +1,7 @@
 package net.kelenna.gravecraft;
 
 import com.mojang.logging.LogUtils;
+import net.kelenna.gravecraft.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +20,8 @@ public class gravecraft {
     private static final Logger LOGGER = LogUtils.getLogger();
     public gravecraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
