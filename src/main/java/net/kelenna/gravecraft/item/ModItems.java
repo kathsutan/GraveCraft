@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> PEARL = ITEMS.register("pearl",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
+     public static final RegistryObject<Item> GLOWSTICk = ITEMS.register("glowstick",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
 
 
 
