@@ -10,5 +10,12 @@ public class ModCreativeModeTab {
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.PEARL.get());
         }
+        public ItemStack glowstickIcon() {
+            return new ItemStack(ModItems.GLOWSTICk.get());
+        }
+
+        public ItemStack tuffyIcon() {
+            return new ItemStack(ModItems.TUFFY.get());
+        }
     };
 }
