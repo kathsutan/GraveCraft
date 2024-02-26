@@ -12,10 +12,14 @@ public class ModCreativeModeTab {
         }
         public ItemStack glowstickIcon() {
             return new ItemStack(ModItems.GLOWSTICk.get());
+        } public ItemStack tunaIcon() {
+            return new ItemStack(ModItems.TUNA.get());
         }
+
 
         public ItemStack tuffyIcon() {
             return new ItemStack(ModItems.TUFFY.get());
         }
     };
+
 }
