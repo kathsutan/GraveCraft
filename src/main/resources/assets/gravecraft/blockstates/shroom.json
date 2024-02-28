@@ -4,16 +4,13 @@
       "model": "gravecraft:block/shroom"
     },
     "facing=south": {
-      "model": "gravecraft:block/shroom",
-      "y": 180
+      "model": "gravecraft:block/shroom"
     },
     "facing=west": {
-      "model": "gravecraft:block/shroom",
-      "y": 280
+      "model": "gravecraft:block/shroom"
     },
     "facing=east": {
-      "model": "gravecraft:block/shroom",
-      "y": 90
+      "model": "gravecraft:block/shroom"
     }
   }
 }
