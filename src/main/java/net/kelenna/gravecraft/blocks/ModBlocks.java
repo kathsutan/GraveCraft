@@ -22,7 +22,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, gravecraft.MOD_ID);
 
     public static final RegistryObject<Block> SHROOM = registerBlock("shroom",
-            () -> new shroom(BlockBehaviour.Properties.of(Material.PLANT).instabreak().requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.GRAVECRAFT_TAB);
+            () -> new shroom(BlockBehaviour.Properties.of(Material.PLANT).instabreak().noOcclusion()), ModCreativeModeTab.GRAVECRAFT_TAB);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

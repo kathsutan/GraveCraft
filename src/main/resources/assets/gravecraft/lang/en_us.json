@@ -1,8 +1,10 @@
 {
-  "item.gravecraft.pearl": "pearl",
-  "item.gravecraft.glowstick": "glowstick",
-  "item.gravecraft.tuffy": "tuffy",
-  "item.gravecraft.tuna": "tuna",
+  "item.gravecraft.pearl": "Pearl",
+  "item.gravecraft.glowstick": "Glowstick",
+  "item.gravecraft.tuffy": "Tuffy",
+  "item.gravecraft.tuna": "Tuna",
+  "item.gravecraft.cooked_tuna": "Cooked Tuna",
+  "item.gravecraft.broccoli": "Broccoli",
   "block.gravecraft.shroom": "Shroom",
 
   "itemGroup.gravecrafttab": "GraveCraft Tab"

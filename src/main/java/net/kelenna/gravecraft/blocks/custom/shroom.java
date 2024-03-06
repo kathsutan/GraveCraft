@@ -20,6 +20,13 @@ public class shroom extends HorizontalDirectionalBlock {
         super(p_54120_);
     }
 
+    private static final VoxelShape SHAPE = Block.box(3,0,3,13,7,13);
+
+    @Override
+    public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
+        return SHAPE;
+    }
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());

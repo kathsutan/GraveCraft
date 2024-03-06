@@ -16,9 +16,16 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.TUNA.get());
         }
 
+        public ItemStack cooked_tunaIcon() {
+            return new ItemStack(ModItems.COOKED_TUNA.get());
+        }
 
         public ItemStack tuffyIcon() {
             return new ItemStack(ModItems.TUFFY.get());
+        }
+
+        public ItemStack broccoliIcon() {
+            return new ItemStack(ModItems.BROCCOLI.get());
         }
     };
 
