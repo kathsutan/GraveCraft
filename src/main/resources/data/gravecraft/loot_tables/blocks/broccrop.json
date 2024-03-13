@@ -52,7 +52,7 @@
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "gravecraft:brocCrop",
+          "block": "gravecraft:broccrop",
           "properties": {
             "age": "6"
           }

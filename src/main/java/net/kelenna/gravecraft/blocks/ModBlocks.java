@@ -27,7 +27,7 @@ public class ModBlocks {
             () -> new shroom(BlockBehaviour.Properties.of(Material.PLANT).instabreak().noOcclusion()), ModCreativeModeTab.GRAVECRAFT_TAB);
 
     public static final RegistryObject<Block> BROCCROP = BLOCKS.register("broccrop",
-            () -> new broccrop(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+            () -> new broccrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)));
 
 
 
