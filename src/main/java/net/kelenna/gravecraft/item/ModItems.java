@@ -1,8 +1,10 @@
 package net.kelenna.gravecraft.item;
 
+import net.kelenna.gravecraft.blocks.ModBlocks;
 import net.kelenna.gravecraft.gravecraft;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,10 +26,13 @@ public class ModItems {
     public static final RegistryObject<Item> BROCCOLI = ITEMS.register("broccoli",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+    public static final RegistryObject<Item> BROCSEEDS = ITEMS.register("brocseeds",
+            () -> new ItemNameBlockItem(ModBlocks.BROCCROP.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
 
     public static final RegistryObject<Item> COOKED_TUNA = ITEMS.register("cooked_tuna",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
-                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(6f).build())));
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(6f).build())));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

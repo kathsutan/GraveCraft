@@ -1,5 +1,6 @@
 package net.kelenna.gravecraft.blocks;
 
+import net.kelenna.gravecraft.blocks.custom.broccrop;
 import net.kelenna.gravecraft.blocks.custom.shroom;
 import net.kelenna.gravecraft.gravecraft;
 import net.kelenna.gravecraft.item.ModCreativeModeTab;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +25,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SHROOM = registerBlock("shroom",
             () -> new shroom(BlockBehaviour.Properties.of(Material.PLANT).instabreak().noOcclusion()), ModCreativeModeTab.GRAVECRAFT_TAB);
+
+    public static final RegistryObject<Block> BROCCROP = BLOCKS.register("broccrop",
+            () -> new broccrop(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

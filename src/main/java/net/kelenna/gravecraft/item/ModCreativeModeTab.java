@@ -27,6 +27,9 @@ public class ModCreativeModeTab {
         public ItemStack broccoliIcon() {
             return new ItemStack(ModItems.BROCCOLI.get());
         }
+        public ItemStack brocseedsIcon() {
+            return new ItemStack(ModItems.BROCSEEDS.get());
+        }
     };
 
 }
