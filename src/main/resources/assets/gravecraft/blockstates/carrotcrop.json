@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "gravecraft:block/carrotcrop0" },
+    "age=1": { "model": "gravecraft:block/carrotcrop1" },
+    "age=2": { "model": "gravecraft:block/carrotcrop2" },
+    "age=3": { "model": "gravecraft:block/carrotcrop3" }
+  }
+}

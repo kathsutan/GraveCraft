@@ -30,6 +30,9 @@ public class ModCreativeModeTab {
         public ItemStack brocseedsIcon() {
             return new ItemStack(ModItems.BROCSEEDS.get());
         }
+        public ItemStack cavecarrotIcon() {
+            return new ItemStack(ModItems.CAVECARROT.get());
+        }
     };
 
 }

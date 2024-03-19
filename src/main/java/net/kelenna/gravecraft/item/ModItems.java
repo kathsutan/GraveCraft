@@ -33,6 +33,9 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_TUNA = ITEMS.register("cooked_tuna",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(7).saturationMod(6f).build())));
+    public static final RegistryObject<Item> CAVECARROT = ITEMS.register("cavecarrot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
+                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

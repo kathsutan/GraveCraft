@@ -29,6 +29,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROCCROP = BLOCKS.register("broccrop",
             () -> new broccrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)));
 
+    public static final RegistryObject<Block> CARROTCROP = BLOCKS.register("carrotcrop",
+            () -> new broccrop(BlockBehaviour.Properties.copy(Blocks.CARROTS)));
+
 
 
 
