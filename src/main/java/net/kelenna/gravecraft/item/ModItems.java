@@ -52,7 +52,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(9f).build())));
     public static final RegistryObject<Item> CHOCOMILK = ITEMS.register("chocomilk",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB).stacksTo(1)
+                    .food(new FoodProperties.Builder().nutrition(0).saturationMod(0).build())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

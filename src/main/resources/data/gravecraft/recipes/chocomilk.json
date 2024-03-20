@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "tag": "minecraft:cocoa_beans"
-    },
-    "X": {
-      "item": "minecraft:milk_bucket"
-    }
-  },
   "pattern": [
     " # ",
     "#X#",
     " # "
   ],
+  "key": {
+    "#": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "X": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
   "result": {
-    "item": "gravecraft:candyapple"
+    "item": "gravecraft:chocomilk"
   }
 }
