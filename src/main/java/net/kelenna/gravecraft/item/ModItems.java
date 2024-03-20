@@ -33,9 +33,27 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_TUNA = ITEMS.register("cooked_tuna",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(7).saturationMod(6f).build())));
+//    public static final RegistryObject<Item> CAVECARROT = ITEMS.register("cavecarrot",
+//            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
+//                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+
     public static final RegistryObject<Item> CAVECARROT = ITEMS.register("cavecarrot",
+            () -> new ItemNameBlockItem(ModBlocks.CARROTCROP.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
+                            .food(new FoodProperties.Builder().nutrition(4).saturationMod(4f).build())));
+    public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+
+    public static final RegistryObject<Item> GRAPESEEDS = ITEMS.register("grapeseeds",
+            () -> new ItemNameBlockItem(ModBlocks.GRAPECROP.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
+    public static final RegistryObject<Item> CANDYAPPLE = ITEMS.register("candyapple",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(9f).build())));
+    public static final RegistryObject<Item> CHOCOMILK = ITEMS.register("chocomilk",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB).stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

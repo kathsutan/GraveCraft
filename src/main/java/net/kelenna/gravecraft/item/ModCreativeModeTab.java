@@ -33,6 +33,18 @@ public class ModCreativeModeTab {
         public ItemStack cavecarrotIcon() {
             return new ItemStack(ModItems.CAVECARROT.get());
         }
+        public ItemStack grapeIcon() {
+            return new ItemStack(ModItems.GRAPE.get());
+        }
+        public ItemStack grapeseedsIcon() {
+            return new ItemStack(ModItems.GRAPESEEDS.get());
+        }
+        public ItemStack candyappleIcon() {
+            return new ItemStack(ModItems.CANDYAPPLE.get());
+        }
+        public ItemStack chocomilkIcon() {
+            return new ItemStack(ModItems.CHOCOMILK.get());
+        }
     };
 
 }

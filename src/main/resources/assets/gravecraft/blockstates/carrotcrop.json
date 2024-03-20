@@ -1,8 +1,28 @@
 {
   "variants": {
-    "age=0": { "model": "gravecraft:block/carrotcrop0" },
-    "age=1": { "model": "gravecraft:block/carrotcrop1" },
-    "age=2": { "model": "gravecraft:block/carrotcrop2" },
-    "age=3": { "model": "gravecraft:block/carrotcrop3" }
+    "age=0": {
+      "model": "gravecraft:block/carrotcrop0"
+    },
+    "age=1": {
+      "model": "gravecraft:block/carrotcrop0"
+    },
+    "age=2": {
+      "model": "gravecraft:block/carrotcrop1"
+    },
+    "age=3": {
+      "model": "gravecraft:block/carrotcrop1"
+    },
+    "age=4": {
+      "model": "gravecraft:block/carrotcrop2"
+    },
+    "age=5": {
+      "model": "gravecraft:block/carrotcrop2"
+    },
+    "age=6": {
+      "model": "gravecraft:block/carrotcrop2"
+    },
+    "age=7": {
+      "model": "gravecraft:block/carrotcrop3"
+    }
   }
 }

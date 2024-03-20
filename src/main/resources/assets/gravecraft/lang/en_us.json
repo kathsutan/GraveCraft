@@ -9,7 +9,12 @@
   "block.gravecraft.shroom": "Shroom",
   "block.gravecraft.broccrop": "Broccoli Crop",
   "block.gravecraft.carrotcrop": "Cave Carrot Crop",
-  "block.gravecraft.cavecarrot": "Cave Carrot",
+  "block.gravecraft.grapecrop": "Grape Crop",
+  "item.gravecraft.cavecarrot": "Cave Carrot",
+  "item.gravecraft.grape": "Grape",
+  "item.gravecraft.grapeseeds": "Grape Seeds",
+  "item.gravecraft.candyapple": "Candy Apple",
+  "item.gravecraft.chocomilk": "Chocolate Milk Bucket",
 
   "itemGroup.gravecrafttab": "GraveCraft Tab"
   
