@@ -41,7 +41,7 @@ public class ZombieBoss extends Monster implements IAnimatable {
     }
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.zombieboss.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.zom.walk", true));
             return PlayState.CONTINUE;
         }
 

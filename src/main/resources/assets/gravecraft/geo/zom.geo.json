@@ -6,47 +6,63 @@
 				"identifier": "geometry.unknown",
 				"texture_width": 256,
 				"texture_height": 256,
-				"visible_bounds_width": 6,
+				"visible_bounds_width": 7,
 				"visible_bounds_height": 9.5,
 				"visible_bounds_offset": [0, 4.25, 0]
 			},
 			"bones": [
 				{
-					"name": "bone",
+					"name": "arms",
 					"pivot": [0, -9, 8]
 				},
 				{
-					"name": "head",
-					"parent": "bone",
-					"pivot": [0, -9, 8],
+					"name": "right_arm",
+					"parent": "arms",
+					"pivot": [0, 87, 0],
 					"cubes": [
-						{"origin": [-17, 96, -16], "size": [32, 32, 32], "uv": [0, 0]}
+						{"origin": [-56.83405, 81.02025, -32], "size": [16, 48, 16], "pivot": [-41.83405, 81.02025, -31], "rotation": [0, 0, 90], "uv": [96, 64]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "arms",
+					"pivot": [0, 89, 0],
+					"cubes": [
+						{"origin": [-52.27219, 81.04181, 16], "size": [16, 48, 16], "pivot": [-37.27219, 81.04181, 17], "rotation": [0, 0, 90], "uv": [128, 0]}
+					]
+				},
+				{
+					"name": "legs",
+					"pivot": [0, -9, 8]
+				},
+				{
+					"name": "right_leg",
+					"parent": "legs",
+					"pivot": [0, 47, -6],
+					"cubes": [
+						{"origin": [-9, 0, -16], "size": [16, 48, 16], "uv": [0, 144]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "legs",
+					"pivot": [0, 47, 8],
+					"cubes": [
+						{"origin": [-9, 0, 0], "size": [16, 48, 16], "uv": [80, 128]}
 					]
 				},
 				{
 					"name": "torso",
-					"parent": "bone",
 					"pivot": [0, -9, 8],
 					"cubes": [
 						{"origin": [-9, 48, -16], "size": [16, 48, 32], "uv": [0, 64]}
 					]
 				},
 				{
-					"name": "legs",
-					"parent": "bone",
+					"name": "head",
 					"pivot": [0, -9, 8],
 					"cubes": [
-						{"origin": [-9, 0, -16], "size": [16, 48, 16], "uv": [0, 144]},
-						{"origin": [-9, 0, 0], "size": [16, 48, 16], "uv": [80, 128]}
-					]
-				},
-				{
-					"name": "arms",
-					"parent": "bone",
-					"pivot": [0, -9, 8],
-					"cubes": [
-						{"origin": [-55, 81, 16], "size": [16, 48, 16], "pivot": [-40, 81, 17], "rotation": [0, 0, 90], "uv": [128, 0]},
-						{"origin": [-55, 81, -32], "size": [16, 48, 16], "pivot": [-40, 81, -31], "rotation": [0, 0, 90], "uv": [96, 64]}
+						{"origin": [-17, 96, -16], "size": [32, 32, 32], "uv": [0, 0]}
 					]
 				}
 			]
