@@ -55,7 +55,7 @@ public class ModItems {
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(9f).build())));
     public static final RegistryObject<Item> CHOCOMILK = ITEMS.register("chocomilk",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB).stacksTo(1)
-                    .food(new FoodProperties.Builder().nutrition(0).saturationMod(0).build())));
+                    /*.food(new FoodProperties.Builder().nutrition(0).saturationMod(0).build())*/));
     public static final RegistryObject<Item> ZOMBIEBOSS_SPAWN_EGG = ITEMS.register("zombieboss_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.ZOMBIEBOSS, 0x22b341, 0x19732e,
                     new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
