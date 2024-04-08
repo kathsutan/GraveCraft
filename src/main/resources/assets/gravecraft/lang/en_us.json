@@ -6,7 +6,7 @@
   "item.gravecraft.cooked_tuna": "Cooked Tuna",
   "item.gravecraft.broccoli": "Broccoli",
   "item.gravecraft.brocseeds": "Broccoli Seeds",
-  "block.gravecraft.shroom": "Shroom",
+  "block.gravecraft.shroom": "Purple Mushroom",
   "block.gravecraft.broccrop": "Broccoli Crop",
   "block.gravecraft.carrotcrop": "Cave Carrot Crop",
   "block.gravecraft.grapecrop": "Grape Crop",
@@ -15,6 +15,7 @@
   "item.gravecraft.grapeseeds": "Grape Seeds",
   "item.gravecraft.candyapple": "Candy Apple",
   "item.gravecraft.chocomilk": "Chocolate Milk Bucket",
+  "item.gravecraft.zombieboss_spawn_egg": "Zombie Boss Spawn Egg",
 
   "itemGroup.gravecrafttab": "GraveCraft Tab"
   

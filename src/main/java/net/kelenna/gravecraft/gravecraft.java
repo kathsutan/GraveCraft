@@ -2,8 +2,11 @@ package net.kelenna.gravecraft;
 
 import com.mojang.logging.LogUtils;
 import net.kelenna.gravecraft.blocks.ModBlocks;
+import net.kelenna.gravecraft.entity.ModEntityTypes;
+import net.kelenna.gravecraft.entity.client.ZombieBossRenderer;
 import net.kelenna.gravecraft.item.ModItems;
 import net.kelenna.gravecraft.painting.ModPaintings;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(gravecraft.MOD_ID)
@@ -32,6 +36,9 @@ public class gravecraft {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         ModPaintings.register(modEventBus);
+
+        GeckoLib.initialize();
+        ModEntityTypes.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -42,6 +49,7 @@ public class gravecraft {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntityTypes.ZOMBIEBOSS.get(), ZombieBossRenderer::new);
         }
     }
 }

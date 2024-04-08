@@ -1,0 +1,55 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 9.5,
+				"visible_bounds_offset": [0, 4.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, -9, 8]
+				},
+				{
+					"name": "head",
+					"parent": "bone",
+					"pivot": [0, -9, 8],
+					"cubes": [
+						{"origin": [-17, 96, -16], "size": [32, 32, 32], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "torso",
+					"parent": "bone",
+					"pivot": [0, -9, 8],
+					"cubes": [
+						{"origin": [-9, 48, -16], "size": [16, 48, 32], "uv": [0, 64]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "bone",
+					"pivot": [0, -9, 8],
+					"cubes": [
+						{"origin": [-9, 0, -16], "size": [16, 48, 16], "uv": [0, 144]},
+						{"origin": [-9, 0, 0], "size": [16, 48, 16], "uv": [80, 128]}
+					]
+				},
+				{
+					"name": "arms",
+					"parent": "bone",
+					"pivot": [0, -9, 8],
+					"cubes": [
+						{"origin": [-55, 81, 16], "size": [16, 48, 16], "pivot": [-40, 81, 17], "rotation": [0, 0, 90], "uv": [128, 0]},
+						{"origin": [-55, 81, -32], "size": [16, 48, 16], "pivot": [-40, 81, -31], "rotation": [0, 0, 90], "uv": [96, 64]}
+					]
+				}
+			]
+		}
+	]
+}

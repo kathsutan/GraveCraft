@@ -1,10 +1,12 @@
 package net.kelenna.gravecraft.item;
 
 import net.kelenna.gravecraft.blocks.ModBlocks;
+import net.kelenna.gravecraft.entity.ModEntityTypes;
 import net.kelenna.gravecraft.gravecraft;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -54,7 +56,9 @@ public class ModItems {
     public static final RegistryObject<Item> CHOCOMILK = ITEMS.register("chocomilk",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB).stacksTo(1)
                     .food(new FoodProperties.Builder().nutrition(0).saturationMod(0).build())));
-
+    public static final RegistryObject<Item> ZOMBIEBOSS_SPAWN_EGG = ITEMS.register("zombieboss_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ZOMBIEBOSS, 0x22b341, 0x19732e,
+                    new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

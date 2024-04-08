@@ -4,6 +4,7 @@ import net.kelenna.gravecraft.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
@@ -37,9 +38,11 @@ public class carrotcrop extends CropBlock {
         builder.add(AGE);
     }
 
-    //    @Override
-//    public boolean canSurvive(BlockState p_52282_, LevelReader p_52283_, BlockPos p_52284_) {
-//        // Check if the block is not exposed to the sky and is not air.
-//        return !p_52283_.canSeeSky(p_52284_) && p_52283_.getBlockState(p_52284_.below()).getBlock() != Blocks.AIR && super.canSurvive(p_52282_, p_52283_, p_52284_);
-//    }
+
+
+    @Override
+    public boolean canSurvive(BlockState p_52282_, LevelReader p_52283_, BlockPos p_52284_) {
+        // Check if the block is not exposed to the sky and is not air.
+        return !p_52283_.canSeeSky(p_52284_) && p_52283_.getBlockState(p_52284_.below()).getBlock() != Blocks.AIR && super.canSurvive(p_52282_, p_52283_, p_52284_);
+    }
 }
