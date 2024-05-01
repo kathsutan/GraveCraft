@@ -1,6 +1,8 @@
 package net.kelenna.gravecraft.entity;
 
 import net.kelenna.gravecraft.entity.custom.ZombieBoss;
+import net.kelenna.gravecraft.entity.custom.huskBoss;
+import net.kelenna.gravecraft.entity.custom.spiderBoss;
 import net.kelenna.gravecraft.gravecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -22,4 +24,17 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(ZombieBoss::new, MobCategory.MONSTER)
                             .sized(2.4f, 7.8f)
                             .build(new ResourceLocation(gravecraft.MOD_ID, "zombieboss").toString()));
+
+    public static final RegistryObject<EntityType<spiderBoss>> SPIDERBOSS =
+            ENTITY_TYPES.register("spiderboss",
+                    () -> EntityType.Builder.of(spiderBoss::new, MobCategory.MONSTER)
+                            .sized(2.4f, 7.8f)
+                            .build(new ResourceLocation(gravecraft.MOD_ID, "spiderboss").toString()));
+
+
+    public static final RegistryObject<EntityType<huskBoss>> HUSKBOSS =
+            ENTITY_TYPES.register("huskboss",
+                    () -> EntityType.Builder.of(huskBoss::new, MobCategory.MONSTER)
+                            .sized(2.4f, 7.8f)
+                            .build(new ResourceLocation(gravecraft.MOD_ID, "huskboss").toString()));
 }

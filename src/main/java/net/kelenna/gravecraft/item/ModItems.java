@@ -59,11 +59,18 @@ public class ModItems {
     public static final RegistryObject<Item> ZOMBIEBOSS_SPAWN_EGG = ITEMS.register("zombieboss_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.ZOMBIEBOSS, 0x22b341, 0x19732e,
                     new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
-    public static final RegistryObject<Item> AVOCADO = ITEMS.register("avocado",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
-                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(9f).build())));
-    public static final RegistryObject<Item> AVOCADOSEEDS = ITEMS.register("avocadoseeds",
-            () -> new ItemNameBlockItem(ModBlocks.AVOCADOCROP.get(),
+
+    //    public static final RegistryObject<Item> AVOCADO = ITEMS.register("avocado",
+//            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)
+//                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(9f).build())));
+//    public static final RegistryObject<Item> AVOCADOSEEDS = ITEMS.register("avocadoseeds",
+//            () -> new ItemNameBlockItem(ModBlocks.AVOCADOCROP.get(),
+//                    new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
+    public static final RegistryObject<Item> SPIDERBOSS_SPAWN_EGG = ITEMS.register("spiderboss_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SPIDERBOSS, 0x890F8A, 0x8A5980,
+                    new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
+    public static final RegistryObject<Item> HUSKBOSS_SPAWN_EGG = ITEMS.register("huskboss_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.HUSKBOSS, 0x9E7A5C, 0x5E4D3A,
                     new Item.Properties().tab(ModCreativeModeTab.GRAVECRAFT_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

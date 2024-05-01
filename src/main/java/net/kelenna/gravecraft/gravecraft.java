@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.kelenna.gravecraft.blocks.ModBlocks;
 import net.kelenna.gravecraft.entity.ModEntityTypes;
 import net.kelenna.gravecraft.entity.client.ZombieBossRenderer;
+import net.kelenna.gravecraft.entity.client.spiderBossRenderer;
+import net.kelenna.gravecraft.entity.client.huskBossRenderer;
 import net.kelenna.gravecraft.item.ModItems;
 import net.kelenna.gravecraft.item.custom.chocomilk;
 import net.kelenna.gravecraft.painting.ModPaintings;
@@ -52,6 +54,8 @@ public class gravecraft {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntityTypes.ZOMBIEBOSS.get(), ZombieBossRenderer::new);
+            EntityRenderers.register(ModEntityTypes.SPIDERBOSS.get(), spiderBossRenderer::new);
+            EntityRenderers.register(ModEntityTypes.HUSKBOSS.get(), huskBossRenderer::new);
         }
     }
 }

@@ -2,6 +2,8 @@ package net.kelenna.gravecraft.events;
 
 import net.kelenna.gravecraft.entity.ModEntityTypes;
 import net.kelenna.gravecraft.entity.custom.ZombieBoss;
+import net.kelenna.gravecraft.entity.custom.huskBoss;
+import net.kelenna.gravecraft.entity.custom.spiderBoss;
 import net.kelenna.gravecraft.gravecraft;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,6 +20,10 @@ public class ModEvents {
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
             event.put(ModEntityTypes.ZOMBIEBOSS.get(), ZombieBoss.setAttributes());
+            event.put(ModEntityTypes.SPIDERBOSS.get(), spiderBoss.setAttributes());
+            event.put(ModEntityTypes.HUSKBOSS.get(), huskBoss.setAttributes());
         }
+
     }
+
 }
