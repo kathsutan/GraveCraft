@@ -45,8 +45,8 @@ public class ModCreativeModeTab {
         public ItemStack chocomilkIcon() {
             return new ItemStack(ModItems.CHOCOMILK.get());
         }
-        //public ItemStack avocadoIcon() {return new ItemStack(ModItems.AVOCADO.get());}
-        //public ItemStack avocadoseedsIcon() {return new ItemStack(ModItems.AVOCADOSEEDS.get());}
+        public ItemStack avocadoIcon() {return new ItemStack(ModItems.AVOCADO.get());}
+        public ItemStack avocadoseedsIcon() {return new ItemStack(ModItems.AVOCADOSEEDS.get());}
 
 
     };

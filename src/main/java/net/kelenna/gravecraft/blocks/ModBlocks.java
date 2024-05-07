@@ -1,9 +1,6 @@
 package net.kelenna.gravecraft.blocks;
 
-import net.kelenna.gravecraft.blocks.custom.broccrop;
-import net.kelenna.gravecraft.blocks.custom.carrotcrop;
-import net.kelenna.gravecraft.blocks.custom.grapecrop;
-import net.kelenna.gravecraft.blocks.custom.shroom;
+import net.kelenna.gravecraft.blocks.custom.*;
 import net.kelenna.gravecraft.gravecraft;
 import net.kelenna.gravecraft.item.ModCreativeModeTab;
 import net.kelenna.gravecraft.item.ModItems;
@@ -36,6 +33,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GRAPECROP = BLOCKS.register("grapecrop",
             () -> new grapecrop(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> AVOCADOCROP = BLOCKS.register("avocadocrop",
+            () -> new avocadocrop(BlockBehaviour.Properties.copy(Blocks.POTATOES)));
 
 
 
