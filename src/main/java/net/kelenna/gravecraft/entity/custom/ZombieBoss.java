@@ -60,7 +60,7 @@ public class ZombieBoss extends Monster implements IAnimatable {
     }
 
     protected void playStepSound(BlockPos pos, BlockState blockIn) {
-        this.playSound(SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, 0.15F, 1.0F);
+        this.playSound(SoundEvents.ZOMBIE_STEP, 0.15F, 1.0F);
     }
 
 
@@ -77,15 +77,15 @@ public class ZombieBoss extends Monster implements IAnimatable {
         this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
     }
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.CAT_STRAY_AMBIENT;
+        return SoundEvents.ZOMBIE_AMBIENT;
     }
 
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.DOLPHIN_HURT;
+        return SoundEvents.ZOMBIE_HURT;
     }
 
     protected SoundEvent getDeathSound() {
-        return SoundEvents.DOLPHIN_DEATH;
+        return SoundEvents.ZOMBIE_DEATH;
     }
 
     protected float getSoundVolume() {
