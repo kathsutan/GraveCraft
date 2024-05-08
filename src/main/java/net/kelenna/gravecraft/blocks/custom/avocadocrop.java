@@ -16,7 +16,7 @@ public class avocadocrop extends CropBlock {
     }
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.AVOCADO.get();
+        return ModItems.AVOCADOSEEDS.get();
     }
 
     @Override

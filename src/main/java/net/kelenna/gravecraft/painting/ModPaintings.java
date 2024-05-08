@@ -18,7 +18,9 @@ public class ModPaintings {
     public static final RegistryObject<PaintingVariant> KATHERINES = PAINTING_VARIANTS.register("katherines",
             () -> new PaintingVariant(32, 32));
 
-    public static final RegistryObject<PaintingVariant> ELENAS = PAINTING_VARIANTS.register(("elenas",
+    public static final RegistryObject<PaintingVariant> ELENAS = PAINTING_VARIANTS.register("elenas",
+            () -> new PaintingVariant(32, 32));
+    public static final RegistryObject<PaintingVariant> ANNA = PAINTING_VARIANTS.register("anna",
             () -> new PaintingVariant(32, 32));
 
     public static void register(IEventBus eventBus) {
